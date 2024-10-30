@@ -63,7 +63,7 @@ plik = open("notowania giełdowe.txt", "r")
 if plik.readable():
     tekst = plik.read()
     print(tekst, end='\n')
-    print("ALR, 113")
+    print("ALR, 113\n")
 
 #zadanie 3
 
