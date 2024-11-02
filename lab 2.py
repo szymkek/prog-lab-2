@@ -4,7 +4,7 @@ x = float(input("podaj liczbę zdobytych punktów:\n "))
 
 if x >= 80:
     print("egzamin zaliczony w terminie 0\n")
-elif x >= 50 and x <= 80:
+elif 50 <= x <= 80:
     print("egzamin zaliczony ale można go poprawić\n")
 else:
     print("egzamin niezaliczony\n")
@@ -21,7 +21,7 @@ if x > y:
 if x > z:
     x,z=z,x
 if y > z:
-    y,z-z,y
+    y,z=z,y
 print(f"liczby w kolejności losowej {x},{y},{z}\n")
 
 #zadanie 6
@@ -31,7 +31,7 @@ litera = input("podaj literę: ")
 if litera.isalpha() and len(litera) == 1:
     if litera.isupper():
         print("litera jest duża\n")
-    if litera.islower():
+    else:
         print("litera jest mała\n")
 
 else:
@@ -62,7 +62,7 @@ print("ostatnie dwa znaki:\n ", {ostatnie_dwa_znaki})
 plik = open("notowania giełdowe.txt", "r")
 if plik.readable():
     tekst = plik.read()
-    print(tekst, end='\n')
+    print(tekst)
     print("ALR, 113\n")
 
 #zadanie 3
