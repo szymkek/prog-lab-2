@@ -11,6 +11,7 @@ else:
 
 #zadanie 2
 
+
 x = float(input("podaj liczbę 1: "))
 y = float(input("podaj liczbę 2: "))
 z = float(input("podaj liczbę 3: "))
@@ -42,10 +43,10 @@ else:
 
 hasło = 'pk47!jy0893'
 
-if len(hasło) >= 11:
+if len(hasło) >= 11 and "!" in hasło:
     print("hasło jest poprawne\n")
 else:
-    print("hasło jest nie poprawne\n")
+    print("hasło jest niepoprawne\n")
 
 #zadanie 8
 
@@ -64,6 +65,7 @@ if plik.readable():
     tekst = plik.read()
     print(tekst)
     print("ALR, 113\n")
+plik.close()
 
 #zadanie 3
 
